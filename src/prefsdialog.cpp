@@ -106,7 +106,6 @@ PrefsDialog::PrefsDialog( QWidget *parent)
   mPrefsUnits = new PrefsUnits(this);
   addDialogPage(mPrefsUnits, QIcon::fromTheme( "chronometer" ), i18n("Units"));
   addDialogPage( whoIsMeTab(), QIcon::fromTheme( "user-identity" ), i18n( "Own Identity" ));
-
   readConfig();
 
 
@@ -248,6 +247,8 @@ QWidget* PrefsDialog::whoIsMeTab()
 
   return topWidget;
 }
+
+
 
 void PrefsDialog::slotChangeIdentity()
 {
