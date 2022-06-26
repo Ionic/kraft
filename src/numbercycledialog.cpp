@@ -140,7 +140,7 @@ void NumberCycleDialog::slotUpdateExample()
   dt.setIdentTemplate( mBaseWidget->mIdTemplEdit->text() );
 
   QString idText = dt.generateDocumentIdent( QDate::currentDate(),
-                                             QLatin1String("<doc type"),
+                                             QLatin1String("<doc type>"),
                                              QLatin1String("<addressUid>"), id );
   mBaseWidget->mExampleId->setText( idText );
 }
