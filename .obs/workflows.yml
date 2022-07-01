@@ -1,0 +1,7 @@
+workflow:
+  steps:
+    - trigger_services:
+        project: home:Ionic:branches:home:kfreitag:KraftAppI
+        package: kraft-nightly
+  filters:
+    event: push
